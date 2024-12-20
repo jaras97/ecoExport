@@ -1,7 +1,6 @@
 // app/layout.tsx
 import './globals.css';
 
-
 export const metadata = {
   title: 'EcoExport',
   description: 'Landing page profesional para EcoExport',
@@ -11,22 +10,18 @@ export const metadata = {
   },
 };
 
-export async function generateStaticParams() {
-  return [{ lang: 'en-US' }, { lang: 'de' }]
-}
 
-export default  function RootLayout({
+export default function RootLayout({
   children,
-  params,
+ 
 }: {
   children: React.ReactNode;
-  params: { lang: 'en' | 'es' }
 
 }) {
-  
+
 
   return (
-    <html lang={params.lang} >
+    <html >
       <body>{children}</body>
     </html>
   );
