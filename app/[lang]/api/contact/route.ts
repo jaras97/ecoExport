@@ -5,8 +5,6 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    console.log(process.env.EMAIL_USER)
-
     const { name, email, message } = body;
 
     if (!name || !email || !message) {

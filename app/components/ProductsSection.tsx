@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Dictionary } from '../[lang]/dictionaries';
 
 export default function ProductsSection({ dict }: { dict: Dictionary }) {
@@ -17,18 +18,26 @@ export default function ProductsSection({ dict }: { dict: Dictionary }) {
               key={index}
               data-aos='flip-up'
               data-aos-delay={index * 200} // Retrasa cada tarjeta
-              className='bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105'
+              className='group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105'
             >
-              {/* Imagen */}
-              <img
-                src={product.image}
-                alt={product.title}
-                className='w-full h-48 object-cover'
-              />
+              {/* Imagen optimizada */}
+              <div className='relative w-full h-48'>
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  layout='fill'
+                  objectFit='cover'
+                  objectPosition='center'
+                  priority={index === 0} // Prioriza la carga de la primera imagen
+                  className='transition-transform duration-500 group-hover:scale-110'
+                />
+              </div>
 
               {/* Contenido */}
-              <div className='p-6'>
-                <h3 className='text-xl font-semibold mb-2'>{product.title}</h3>
+              <div className='p-6 bg-gray-100 text-center group-hover:bg-gray-200 transition-colors duration-300'>
+                <h3 className='text-2xl font-bold text-gray-900 mb-2'>
+                  {product.title}
+                </h3>
                 <p className='text-gray-700'>{product.description}</p>
               </div>
             </div>

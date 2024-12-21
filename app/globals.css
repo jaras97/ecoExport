@@ -20,3 +20,10 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
+.fixed {
+  transition: all 0.3s ease;
+}
+
+.fixed:hover {
+  transform: scale(1.1);
+}

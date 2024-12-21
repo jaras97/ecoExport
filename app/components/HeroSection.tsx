@@ -1,15 +1,29 @@
+import Image from 'next/image';
 import { Dictionary } from '../[lang]/dictionaries';
 
 export default function HeroSection({ dict }: { dict: Dictionary }) {
   return (
     <div
       id='inicio'
-      className='relative bg-cover bg-gray-50 bg-center h-screen text-white'
-      style={{ backgroundImage: "url('/images/hero-main.jpg')" }}
+      className='relative h-screen text-white flex items-center justify-center'
       data-aos='fade-in'
     >
-      <div className='absolute inset-0 bg-black bg-opacity-50'></div>
-      <div className='relative z-10 flex flex-col items-center justify-center h-full text-center px-4'>
+      {/* Imagen optimizada */}
+      <div className='absolute inset-0'>
+        <Image
+          src='/main2.png'
+          alt='Hero Background'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          priority
+        />
+        {/* Overlay oscuro */}
+        <div className='absolute inset-0 bg-black bg-opacity-50'></div>
+      </div>
+
+      {/* Contenido */}
+      <div className='relative z-10 text-center px-4'>
         <h1 className='text-4xl md:text-6xl font-bold mb-4' data-aos='zoom-in'>
           {dict.hero.title}
         </h1>

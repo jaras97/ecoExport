@@ -26,17 +26,17 @@
     {
       "title": "Chatarra HSM1 y HSM2",
       "description": "Acero pesado y limpio para tus procesos industriales.",
-      "image": "/images/chatarra.jpg"
+      "image": "/chatarra.png"
     },
     {
       "title": "Maderas de Alta Calidad",
       "description": "Resistentes y versátiles para cualquier aplicación.",
-      "image": "/images/madera.jpg"
+      "image": "/madera.jpg"
     },
     {
       "title": "Frutas Deshidratadas",
       "description": "Sabor natural, saludable y listo para exportación.",
-      "image": "/images/frutas.jpg"
+      "image": "/frutos.png"
     }
   ]
 },
