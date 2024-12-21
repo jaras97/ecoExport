@@ -64,7 +64,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
             <ul className='space-y-2'>
               <li>
                 <span className='block text-gray-300'>
-                  <strong>Teléfono:</strong> +506 8434 9793
+                  <strong>{dict.footer.contact.phone}</strong> +506 8434 9793
                 </span>
               </li>
               <li>

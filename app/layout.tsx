@@ -13,7 +13,7 @@ export const metadata = {
     title: 'EcoExport - Exporting Quality and Trust',
     description:
       'Sustainable and reliable services exporting high-quality materials.',
-    url: 'https://ecoexportcr.com',
+    url: 'https://ecoexportcostarica.com',
     type: 'website',
     images: [
       {

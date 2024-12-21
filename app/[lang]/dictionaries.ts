@@ -83,5 +83,7 @@ const dictionaries = {
   es: () => import('./dictionaries/es.json').then((module) => module.default),
 }
  
-export const getDictionary = async (locale: 'en' | 'es') =>
-  dictionaries[locale]()
+export const getDictionary = async (locale: 'en' | 'es') => {
+  const safeLocale = ['en', 'es'].includes(locale) ? locale : 'en';
+  return dictionaries[safeLocale]();
+};

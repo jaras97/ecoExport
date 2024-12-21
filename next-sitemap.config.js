@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://ecoexportcr.com',
+    siteUrl: 'https://ecoexportcostarica.com',
     generateRobotsTxt: true,
     changefreq: 'weekly',
     priority: 0.7,
