@@ -30,7 +30,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
               </li>
               <li>
                 <a
-                  href='#sobre-nosotros'
+                  href='#nosotros'
                   className='hover:text-secondary transition-colors'
                 >
                   {dict.footer.quickLinks.links.about}

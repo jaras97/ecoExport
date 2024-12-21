@@ -1,4 +1,3 @@
-import { GoogleAnalytics } from 'nextjs-google-analytics';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
@@ -45,34 +44,10 @@ export default function RootLayout({
 }) {
   return (
     <html className={poppins.variable}>
-      <GoogleAnalytics trackPageViews />
-      <head>
-        {/* Datos estructurados */}
-        <script
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'EcoExport',
-              url: 'https://ecoexportcr.com',
-              logo: 'https://ecoexportcr.com/logo.jpeg',
-              contactPoint: [
-                {
-                  '@type': 'ContactPoint',
-                  telephone: '+506 8434 9793',
-                  contactType: 'Customer Service',
-                },
-              ],
-            }),
-          }}
-        />
-      </head>
-      <body>
-        {children}
-        <Analytics />
-        <SpeedInsights />
-      </body>
+      <Analytics />
+      <SpeedInsights />
+
+      <body>{children}</body>
     </html>
   );
 }
