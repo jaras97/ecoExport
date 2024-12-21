@@ -68,7 +68,13 @@ export type Dictionary = {
       email: string;
     };
     rights: string;
+   
   };
+  whatsapp: {
+    phone: string,
+    message: string,
+    label: string
+  }
 };
 
 

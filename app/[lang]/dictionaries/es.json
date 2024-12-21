@@ -78,5 +78,12 @@
     "email": "Correo: info@ecoexport.com"
   },
   "rights": "Todos los derechos reservados"
-}
+  
+  
+},
+"whatsapp": {
+    "phone": "50684349793",
+    "message": "Hola EcoExport, me gustaría más información.",
+    "label": "WhatsApp"
+  }
 }

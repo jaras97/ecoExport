@@ -15,9 +15,5 @@ export default function LangLayout({
       once: true, // Ejecuta la animación solo una vez
     });
   }, []);
-  return (
-    <html>
-      <body>{children}</body>
-    </html>
-  );
+  return <>{children}</>;
 }

@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { Dictionary } from '../[lang]/dictionaries';
 
-export default function WhatsAppButton() {
+export default function WhatsAppButton({ dict }: { dict: Dictionary }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => setIsHovered(!isHovered);
@@ -15,16 +16,18 @@ export default function WhatsAppButton() {
       onMouseLeave={handleHover}
     >
       <a
-        href='https://wa.me/50612345678?text=Hola%20EcoExport,%20me%20gustaría%20más%20información.'
+        href={`https://wa.me/${dict.whatsapp.phone}?text=${encodeURIComponent(
+          dict.whatsapp.message,
+        )}`}
         target='_blank'
         rel='noopener noreferrer'
         className='flex items-center space-x-2 bg-green-500 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-110 hover:shadow-xl'
-        aria-label='Contact us on WhatsApp'
+        aria-label={dict.whatsapp.label}
       >
         <FaWhatsapp className='text-2xl' />
         {isHovered && (
           <span className='hidden md:block text-white font-medium'>
-            WhatsApp
+            {dict.whatsapp.label}
           </span>
         )}
       </a>

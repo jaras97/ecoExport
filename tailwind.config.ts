@@ -19,7 +19,7 @@ const config: Config = {
         textDark: '#333333', // Gris antracita
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['var(--font-poppins)', 'sans-serif'], // Configura tu fuente principal
       },
     },
   },

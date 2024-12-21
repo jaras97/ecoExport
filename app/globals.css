@@ -10,7 +10,7 @@ html {
 body {
   background-color: theme('colors.background');
   color: theme('colors.textPrimary');
-  font-family: 'Inter', sans-serif; /* Configura la fuente directamente */
+  font-family: var(--font-poppins), sans-serif;
   margin: 0;
   padding: 0;
 }

@@ -23,7 +23,7 @@ export default async function Page({
       <ProductsSection dict={dict} />
       <ContactSection dict={dict} />
       <Footer dict={dict} />
-      <WhatsAppButton />
+      <WhatsAppButton dict={dict} />
     </div>
   );
 }
