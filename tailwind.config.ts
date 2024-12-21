@@ -8,12 +8,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#005F73',
-        secondary: '#0A9396',
+
         accent: '#94D2BD',
-        neutral: '#E9D8A6',
-        background: '#EEE',
+  
         textPrimary: '#001219',
+        primary: '#005F73', // Azul profundo
+        secondary: '#94D2BD', // Verde azulado
+        background: '#F9FAFB', // Blanco humo
+        neutral: '#E5E7EB', // Gris claro
+        textDark: '#333333', // Gris antracita
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

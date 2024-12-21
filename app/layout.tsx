@@ -1,4 +1,3 @@
-// app/layout.tsx
 import './globals.css';
 
 export const metadata = {
@@ -9,19 +8,13 @@ export const metadata = {
     shortcut: '/logo.jpeg',
   },
 };
-
-
 export default function RootLayout({
   children,
- 
 }: {
   children: React.ReactNode;
-
 }) {
-
-
   return (
-    <html >
+    <html>
       <body>{children}</body>
     </html>
   );

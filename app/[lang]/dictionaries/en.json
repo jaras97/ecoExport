@@ -1,5 +1,82 @@
 {
-    "products": {
-      "cart": "Add to Cart"
+  "header": {
+    "about_us": "About Us",
+    "products": "Products",
+    "contact": "Contact",
+    "cta": "Contact Us"
+  },
+  "hero": {
+    "title": "Exporting quality and trust.",
+    "subtitle": "A variety of products to meet your global needs.",
+    "cta": "Contact Us Now"
+  },
+  "about": {
+  "title": "About Us",
+  "description": "At EcoExport, we export high-quality materials such as scrap metal, wood, and dried fruits, committed to sustainability and trust in every delivery.",
+  "quality": "Guaranteed Quality",
+  "qualityDescription": "We ensure that every product meets the highest quality standards.",
+  "sustainability": "Sustainability",
+  "sustainabilityDescription": "We are committed to caring for the environment in all our operations.",
+  "trust": "Trust",
+  "trustDescription": "Our priority is to build strong and reliable relationships with our customers."
+},
+ "products": {
+  "title": "Our Products",
+  "items": [
+    {
+      "title": "HSM1 and HSM2 Scrap",
+      "description": "Heavy and clean steel for your industrial processes.",
+      "image": "/images/chatarra.jpg"
+    },
+    {
+      "title": "High-Quality Wood",
+      "description": "Durable and versatile for any application.",
+      "image": "/images/madera.jpg"
+    },
+    {
+      "title": "Dried Fruits",
+      "description": "Natural, healthy flavors ready for export.",
+      "image": "/images/frutas.jpg"
     }
-  }
+  ]
+},
+"contact": {
+  "title": "Contact Us",
+  "description": "Fill out the form so we can meet your needs.",
+  "form": {
+    "namePlaceholder": "Full Name",
+    "emailPlaceholder": "Email Address",
+    "messagePlaceholder": "Your Message",
+    "nameError": "Name is required",
+    "emailError": {
+      "required": "Email is required",
+      "invalid": "Invalid email address"
+    },
+    "messageError": "Message is required",
+    "submit": "Send Message"
+  },
+  "success": "Message sent successfully!",
+  "error": "There was an error sending the email. Please try again."
+},
+"footer": {
+  "company": {
+    "title": "EcoExport",
+    "description": "Exporting quality and trust from the heart of Costa Rica. Committed to sustainability and the environment."
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "products": "Products",
+      "contact": "Contact"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone: +506 1234 5678",
+    "email": "Email: info@ecoexport.com"
+  },
+  "rights": "All rights reserved"
+}
+}

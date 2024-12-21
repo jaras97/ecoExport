@@ -1,5 +1,82 @@
 {
-    "products": {
-      "cart": "Agregar al carrito"
+  "header": {
+    "about_us": "Sobre Nosotros",
+    "products": "Productos",
+    "contact": "Contacto",
+    "cta": "Contáctanos"
+  },
+  "hero": {
+    "title": "Exportando calidad y confianza.",
+    "subtitle": "Diversidad de productos para satisfacer tus necesidades globales.",
+    "cta": "Contáctanos ahora"
+  },
+ "about": {
+    "title": "Sobre Nosotros",
+    "description": "En EcoExport nos dedicamos a exportar materiales de alta calidad como chatarra, maderas y frutas deshidratadas, comprometidos con la sostenibilidad y la confianza en cada entrega.",
+    "quality": "Calidad Garantizada",
+    "qualityDescription": "Nos aseguramos de que cada producto cumpla con los más altos estándares de calidad.",
+    "sustainability": "Sostenibilidad",
+    "sustainabilityDescription": "Estamos comprometidos con el cuidado del medio ambiente en todas nuestras operaciones.",
+    "trust": "Confianza",
+    "trustDescription": "Nuestra prioridad es construir relaciones sólidas y confiables con nuestros clientes."
+  },
+ "products": {
+  "title": "Nuestros Productos",
+  "items": [
+    {
+      "title": "Chatarra HSM1 y HSM2",
+      "description": "Acero pesado y limpio para tus procesos industriales.",
+      "image": "/images/chatarra.jpg"
+    },
+    {
+      "title": "Maderas de Alta Calidad",
+      "description": "Resistentes y versátiles para cualquier aplicación.",
+      "image": "/images/madera.jpg"
+    },
+    {
+      "title": "Frutas Deshidratadas",
+      "description": "Sabor natural, saludable y listo para exportación.",
+      "image": "/images/frutas.jpg"
     }
-  }
+  ]
+},
+"contact": {
+  "title": "Contáctanos",
+  "description": "Llena el formulario para que podamos atender tus necesidades.",
+  "form": {
+    "namePlaceholder": "Nombre completo",
+    "emailPlaceholder": "Correo electrónico",
+    "messagePlaceholder": "Tu mensaje",
+    "nameError": "El nombre es obligatorio",
+    "emailError": {
+      "required": "El correo es obligatorio",
+      "invalid": "Correo no válido"
+    },
+    "messageError": "El mensaje es obligatorio",
+    "submit": "Enviar mensaje"
+  },
+  "success": "¡Correo enviado exitosamente!",
+  "error": "Hubo un error al enviar el correo. Intenta nuevamente."
+},
+"footer": {
+  "company": {
+    "title": "EcoExport",
+    "description": "Exportando calidad y confianza desde el corazón de Costa Rica. Comprometidos con la sostenibilidad y el medio ambiente."
+  },
+  "quickLinks": {
+    "title": "Enlaces Rápidos",
+    "links": {
+      "home": "Inicio",
+      "about": "Sobre Nosotros",
+      "products": "Productos",
+      "contact": "Contacto"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "phone": "Teléfono: +506 1234 5678",
+    "email": "Correo: info@ecoexport.com"
+  },
+  "rights": "Todos los derechos reservados"
+}
+}
