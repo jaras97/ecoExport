@@ -26,17 +26,17 @@
     {
       "title": "HSM1 and HSM2 Scrap",
       "description": "Heavy and clean steel for your industrial processes.",
-      "image": "/images/chatarra.jpg"
+       "image": "/chatarra.png"
     },
     {
       "title": "High-Quality Wood",
       "description": "Durable and versatile for any application.",
-      "image": "/images/madera.jpg"
+     "image": "/madera.jpg"
     },
     {
       "title": "Dried Fruits",
       "description": "Natural, healthy flavors ready for export.",
-      "image": "/images/frutas.jpg"
+        "image": "/frutos.png"
     }
   ]
 },
