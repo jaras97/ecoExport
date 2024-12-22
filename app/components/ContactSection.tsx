@@ -9,6 +9,23 @@ type FormData = {
   message: string;
 };
 
+type GtagFunction = (
+  event: string,
+  action: string,
+  params: {
+    event_category?: string;
+    event_label?: string;
+    value?: number;
+  },
+) => void;
+
+// Extiende la interfaz `Window` para incluir `gtag` con un tipo estricto
+declare global {
+  interface Window {
+    gtag?: GtagFunction;
+  }
+}
+
 export default function ContactSection({ dict }: { dict: Dictionary }) {
   const {
     register,
@@ -28,6 +45,13 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
       if (response.ok) {
         alert(dict.contact.success);
         reset();
+        if (window.gtag) {
+          window.gtag('event', 'form_submission', {
+            event_category: 'Contact Form',
+            event_label: 'Contact Form Submission',
+            value: 1,
+          });
+        }
       } else {
         alert(dict.contact.error);
       }

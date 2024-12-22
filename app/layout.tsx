@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import { Poppins } from 'next/font/google';
+import Head from 'next/head';
 
 export const metadata = {
   title: 'EcoExport - Exporting Quality and Trust',
@@ -44,6 +45,23 @@ export default function RootLayout({
 }) {
   return (
     <html className={poppins.variable}>
+      <Head>
+        {/* Google Analytics */}
+        <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-KWQG9VRDRB'
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-KWQG9VRDRB');
+            `,
+          }}
+        />
+      </Head>
       <Analytics />
       <SpeedInsights />
 

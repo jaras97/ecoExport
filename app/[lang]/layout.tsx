@@ -19,7 +19,7 @@ export default function LangLayout({
   return (
     <>
       {' '}
-      <GoogleAnalytics />
+      <GoogleAnalytics trackPageViews gaMeasurementId='G-KWQG9VRDRB' />
       {children}
     </>
   );
