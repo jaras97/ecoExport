@@ -26,7 +26,7 @@ export async function POST(req: Request) {
     // Contenido del correo
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'mateojaras@gmail.com', // Correo del destinatario
+      to: process.env.EMAIL_RECEIVED,
       subject: 'Nuevo mensaje de contacto - EcoExport',
       text: `
         Nombre: ${name}
