@@ -1,5 +1,5 @@
 import { Dictionary } from '../[lang]/dictionaries';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Footer({ dict }: { dict: Dictionary }) {
   return (
