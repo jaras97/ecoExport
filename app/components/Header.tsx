@@ -132,7 +132,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
             <li>
               <Link
                 href='#contacto'
-                className='bg-accent text-primary px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300'
+                className='bg-secondary text-white px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300'
                 onClick={() => setIsMenuOpen(false)}
               >
                 {dict.header.cta}
