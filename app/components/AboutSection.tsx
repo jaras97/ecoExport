@@ -7,13 +7,13 @@ export default function AboutSection({ dict }: { dict: Dictionary }) {
     <section id='nosotros' className='py-16 bg-white'>
       <div className='container mx-auto px-4 text-center'>
         {/* Título */}
-        <h2 className='text-3xl font-bold mb-8' data-aos='fade-up'>
+        <h2 className='text-5xl font-bold mb-8' data-aos='fade-up'>
           {dict.about.title}
         </h2>
 
         {/* Descripción */}
         <p
-          className='text-lg text-gray-700 mb-12'
+          className='text-xl text-gray-700 mb-12'
           data-aos='fade-up'
           data-aos-delay='200'
         >
@@ -25,17 +25,21 @@ export default function AboutSection({ dict }: { dict: Dictionary }) {
           {/* Calidad Garantizada */}
           <div className='flex flex-col items-center' data-aos='zoom-in'>
             <FaAward className='text-primary text-6xl mb-4' />
-            <h3 className='text-xl font-semibold mb-2'>{dict.about.quality}</h3>
-            <p className='text-gray-600'>{dict.about.qualityDescription}</p>
+            <h3 className='text-3xl font-semibold mb-2'>
+              {dict.about.quality}
+            </h3>
+            <p className='text-gray-600 text-lg'>
+              {dict.about.qualityDescription}
+            </p>
           </div>
 
           {/* Sostenibilidad */}
           <div className='flex flex-col items-center' data-aos='zoom-in'>
             <FaLeaf className='text-primary text-6xl mb-4' />
-            <h3 className='text-xl font-semibold mb-2'>
+            <h3 className='text-3xl font-semibold mb-2'>
               {dict.about.sustainability}
             </h3>
-            <p className='text-gray-600'>
+            <p className='text-gray-600 text-lg'>
               {dict.about.sustainabilityDescription}
             </p>
           </div>
@@ -43,8 +47,10 @@ export default function AboutSection({ dict }: { dict: Dictionary }) {
           {/* Confianza */}
           <div className='flex flex-col items-center' data-aos='zoom-in'>
             <FaHandshake className='text-primary text-6xl mb-4' />
-            <h3 className='text-xl font-semibold mb-2'>{dict.about.trust}</h3>
-            <p className='text-gray-600'>{dict.about.trustDescription}</p>
+            <h3 className='text-3xl font-semibold mb-2'>{dict.about.trust}</h3>
+            <p className='text-gray-600 text-lg'>
+              {dict.about.trustDescription}
+            </p>
           </div>
         </div>
       </div>

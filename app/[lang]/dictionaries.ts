@@ -24,10 +24,14 @@ export type Dictionary = {
   };
   products: {
     title: string;
+    downloadMessage: string,
+  pdfNote: string,
+    pdf: string,
     items: {
       title: string;
       description: string;
       image: string;
+      pdf?: string,
     }[];
   };
   contact: {
@@ -67,6 +71,17 @@ export type Dictionary = {
       phone: string;
       email: string;
     };
+    alliedCompanies: {
+      title: string;
+      companies: {
+        name: string;
+        description: string;
+        logo: string;
+        url?: string;
+        email: string
+      }[];
+    };
+    
     rights: string;
    
   };

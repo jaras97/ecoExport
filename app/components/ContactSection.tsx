@@ -64,11 +64,11 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
   return (
     <section id='contacto' className='py-16 bg-gray-50'>
       <div className='container mx-auto px-4 text-center'>
-        <h2 className='text-3xl font-bold mb-8' data-aos='slide-up'>
+        <h2 className='text-5xl font-bold mb-8' data-aos='slide-up'>
           {dict.contact.title}
         </h2>
         <p
-          className='text-lg text-gray-700 mb-8'
+          className='text-2xl text-gray-700 mb-8'
           data-aos='fade-up'
           data-aos-delay='200'
         >
@@ -84,7 +84,7 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
             {...register('name', { required: dict.contact.form.nameError })}
             type='text'
             placeholder={dict.contact.form.namePlaceholder}
-            className='p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none'
+            className='p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none text-xl'
           />
           {errors.name && (
             <p className='text-red-500 text-sm'>{errors.name.message}</p>
@@ -100,7 +100,7 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
             })}
             type='email'
             placeholder={dict.contact.form.emailPlaceholder}
-            className='p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none'
+            className='p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none text-xl'
           />
           {errors.email && (
             <p className='text-red-500 text-sm'>{errors.email.message}</p>
@@ -112,7 +112,7 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
             })}
             placeholder={dict.contact.form.messagePlaceholder}
             rows={5}
-            className='p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none'
+            className='p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none text-xl'
           ></textarea>
           {errors.message && (
             <p className='text-red-500 text-sm'>{errors.message.message}</p>
@@ -122,7 +122,7 @@ export default function ContactSection({ dict }: { dict: Dictionary }) {
             type='submit'
             data-aos='zoom-in'
             data-aos-delay='600'
-            className='px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors font-medium'
+            className='px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors font-medium text-xl'
           >
             {dict.contact.form.submit}
           </button>

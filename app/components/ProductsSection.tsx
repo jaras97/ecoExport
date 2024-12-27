@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import { Dictionary } from '../[lang]/dictionaries';
+import DownloadPDF from './DownloadPDF';
 
 export default function ProductsSection({ dict }: { dict: Dictionary }) {
   return (
     <section id='productos' className='py-16 bg-primary'>
       <div className='container mx-auto px-4 text-center'>
         {/* Título */}
-        <h2 className='text-3xl text-white font-bold mb-8' data-aos='fade-up'>
+        <h2 className='text-5xl text-white font-bold mb-8' data-aos='fade-up'>
           {dict.products.title}
         </h2>
 
@@ -34,15 +35,21 @@ export default function ProductsSection({ dict }: { dict: Dictionary }) {
               </div>
 
               {/* Contenido */}
-              <div className='p-6 bg-gray-100 text-center group-hover:bg-gray-200 transition-colors duration-300'>
-                <h3 className='text-2xl font-bold text-gray-900 mb-2'>
-                  {product.title}
-                </h3>
-                <p className='text-gray-700'>{product.description}</p>
+              <div className='flex flex-col justify-between h-full p-6 bg-gray-100 text-center group-hover:bg-gray-200 transition-colors duration-300'>
+                <div>
+                  <h3 className='text-4xl font-bold text-gray-900 mb-2'>
+                    {product.title}
+                  </h3>
+                  <p className='text-gray-700 text-lg'>{product.description}</p>
+                </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Botón de descarga global */}
+
+        <DownloadPDF dict={dict} />
       </div>
     </section>
   );

@@ -22,6 +22,9 @@
   },
  "products": {
   "title": "Nuestros Productos",
+  "downloadMessage": "Descargar PDF Detallado del Producto",
+  "pdfNote": "Obtén información detallada sobre nuestros productos.",
+  "pdf": "/pdf/chatarraSpa.pdf",
   "items": [
     {
       "title": "Chatarra HSM1 y HSM2",
@@ -62,6 +65,18 @@
   "company": {
     "title": "EcoExport",
     "description": "Exportando calidad y confianza desde el corazón de Costa Rica. Comprometidos con la sostenibilidad y el medio ambiente."
+  },
+  "alliedCompanies": {
+    "title": "Empresas Aliadas",
+    "companies": [
+      {
+        "name": "AgroEléctrica JB",
+        "description": "Ofrecemos la venta e instalación de cercas eléctricas ganaderas, perimetrales y para mascotas, accesorios para ganadería, mantenimiento y reparaciones. Materiales de alta calidad con la mejor garantía.",
+        "logo": "/images/allied-company-logo.png",
+        "url": "https://empresa-cercas-electricas.com",
+        "email": "contacto@agroelectricajb.com"
+      }
+    ]
   },
   "quickLinks": {
     "title": "Enlaces Rápidos",

@@ -22,6 +22,9 @@
 },
  "products": {
   "title": "Our Products",
+  "downloadMessage": "Download Product Details PDF",
+  "pdfNote": "Get detailed information about our products.",
+  "pdf": "/pdf/ChatarraEn.pdf",
   "items": [
     {
       "title": "HSM1 and HSM2 Scrap",
@@ -62,6 +65,18 @@
   "company": {
     "title": "EcoExport",
     "description": "Exporting quality and trust from the heart of Costa Rica. Committed to sustainability and the environment."
+  },
+  "alliedCompanies": {
+    "title": "Allied Companies",
+    "companies": [
+      {
+        "name": "AgroEléctrica JB",
+        "description": "We offer the sale and installation of electric fences for livestock, perimeters, and pets, accessories for livestock, maintenance, and repairs. High-quality materials with the best guarantee.",
+        "logo": "/images/allied-company-logo.png",
+        "url": "https://electricfencescompany.com",
+        "email": "contacto@agroelectricajb.com"
+      }
+    ]
   },
   "quickLinks": {
     "title": "Quick Links",

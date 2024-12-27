@@ -25,19 +25,19 @@ export default function Header({ dict }: { dict: Dictionary }) {
         <nav className='hidden md:flex space-x-6'>
           <Link
             href='#nosotros'
-            className='hover:text-accent transition-colors duration-300'
+            className='hover:text-accent transition-colors duration-300 text-xl'
           >
             {dict.header.about_us}
           </Link>
           <Link
             href='#productos'
-            className='hover:text-accent transition-colors duration-300'
+            className='hover:text-accent transition-colors duration-300 text-xl'
           >
             {dict.header.products}
           </Link>
           <Link
             href='#contacto'
-            className='hover:text-accent transition-colors duration-300'
+            className='hover:text-accent transition-colors duration-300 text-xl'
           >
             {dict.header.contact}
           </Link>
@@ -46,7 +46,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
         {/* Botón CTA */}
         <Link
           href='#contacto'
-          className='hidden md:block bg-accent text-primary px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300'
+          className='hidden md:block bg-secondary text-white px-4 py-2 rounded-md hover:bg-secondary transition-colors duration-300 text-lg'
         >
           {dict.header.cta}
         </Link>
@@ -55,13 +55,13 @@ export default function Header({ dict }: { dict: Dictionary }) {
         <div className='flex items-center space-x-4 md:space-x-6'>
           <button
             onClick={() => changeLanguage('en')}
-            className='text-white hover:underline'
+            className='text-white hover:underline text-lg'
           >
             EN
           </button>
           <button
             onClick={() => changeLanguage('es')}
-            className='text-white hover:underline'
+            className='text-white hover:underline text-lg'
           >
             ES
           </button>

@@ -33,7 +33,7 @@ export default function HeroSection({ dict }: { dict: Dictionary }) {
         <a
           href='#contacto'
           data-aos-delay='400'
-          className='px-6 py-3 bg-primary text-white rounded-lg text-lg font-medium hover:bg-secondary transition-colors'
+          className='px-6 py-3 bg-secondary text-white rounded-lg text-lg font-medium hover:bg-secondary transition-colors'
         >
           {dict.hero.cta}
         </a>

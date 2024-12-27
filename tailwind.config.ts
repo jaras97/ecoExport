@@ -2,24 +2,22 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx}', // Incluye la carpeta "app"
-    './src/**/*.{js,ts,jsx,tsx}', // Incluye la carpeta "src" (por si acaso la usas)
+    './app/**/*.{js,ts,jsx,tsx}', 
+    './src/**/*.{js,ts,jsx,tsx}', 
   ],
   theme: {
     extend: {
       colors: {
-
-        accent: '#94D2BD',
-  
-        textPrimary: '#001219',
-        primary: '#005F73', // Azul profundo
-        secondary: '#94D2BD', // Verde azulado
-        background: '#F9FAFB', // Blanco humo
-        neutral: '#E5E7EB', // Gris claro
-        textDark: '#333333', // Gris antracita
+        primary: '#006837', 
+        accent: '#AAD330', 
+        secondary: '#A9754E', 
+        background: '#F9FAFB', 
+        textPrimary: '#001219', 
+        neutral: '#E5E7EB', 
+        textDark: '#333333',
       },
       fontFamily: {
-        sans: ['var(--font-poppins)', 'sans-serif'], // Configura tu fuente principal
+        sans: ['Barlow Semi Condensed', 'sans-serif'], 
       },
     },
   },
