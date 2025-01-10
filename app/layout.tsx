@@ -45,7 +45,10 @@ export default function RootLayout({
 }) {
   return (
     <html className={poppins.variable}>
-      <head />
+      <head>
+        {/* Agrega el favicon */}
+        <link rel='icon' href='/logo.svg' type='image/svg+xml' />
+      </head>
       {/* Google Analytics */}
 
       <Analytics />
