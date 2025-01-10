@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Dictionary } from '../[lang]/dictionaries';
+import Image from 'next/image';
 
 export default function Header({ dict }: { dict: Dictionary }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,11 +15,21 @@ export default function Header({ dict }: { dict: Dictionary }) {
   };
 
   return (
-    <header className='bg-primary text-white shadow-md transition-all duration-300 ease-in-out py-6'>
+    <header className='bg-primary text-white shadow-md transition-all duration-300 ease-in-out py-3'>
       <div className='container flex justify-between items-center py-4 px-4 lg:px-0'>
         {/* Logo */}
-        <Link href='/' className='font-bold text-lg'>
-          Eco Export
+        <Link
+          href='/'
+          className='font-bold text-lg flex items-center justify-center gap-5'
+        >
+          <Image
+            src='/logo.svg' // Ruta al archivo SVG en la carpeta public
+            alt='Eco Export Logo'
+            width={100} // Ajusta el ancho del ícono según sea necesario
+            height={100} // Ajusta la altura del ícono según sea necesario
+            priority // Optimiza la carga del ícono
+          />
+          <h1 className='hidden md:block'>Eco Export</h1>
         </Link>
 
         {/* Navegación para pantallas medianas y grandes */}

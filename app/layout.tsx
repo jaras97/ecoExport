@@ -18,7 +18,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/logo.jpeg',
+        url: '/logo.svg',
         alt: 'EcoExport logo',
       },
     ],
