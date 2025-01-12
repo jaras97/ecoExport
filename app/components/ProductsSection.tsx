@@ -1,7 +1,9 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { Dictionary } from '../[lang]/dictionaries';
-import DownloadPDF from './DownloadPDF';
+import { motion } from 'framer-motion';
 
 export default function ProductsSection({ dict }: { dict: Dictionary }) {
   return (
@@ -19,7 +21,7 @@ export default function ProductsSection({ dict }: { dict: Dictionary }) {
               key={index}
               data-aos='flip-up'
               data-aos-delay={index * 200} // Retrasa cada tarjeta
-              className='group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105'
+              className='group bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col justify-between'
             >
               {/* Imagen optimizada */}
               <div className='relative w-full h-48'>
@@ -35,21 +37,33 @@ export default function ProductsSection({ dict }: { dict: Dictionary }) {
               </div>
 
               {/* Contenido */}
-              <div className='flex flex-col justify-between h-full p-6 bg-gray-100 text-center group-hover:bg-gray-200 transition-colors duration-300'>
+              <div className='flex flex-col justify-between flex-grow p-6 bg-gray-100 text-center group-hover:bg-gray-200 transition-colors duration-300'>
                 <div>
                   <h3 className='text-4xl font-bold text-gray-900 mb-2'>
                     {product.title}
                   </h3>
                   <p className='text-gray-700 text-lg'>{product.description}</p>
                 </div>
+                {/* Botón de descarga */}
+
+                {product.pdf && (
+                  <motion.a
+                    href={product.pdf}
+                    download
+                    className='inline-block mt-4 px-6 py-3 bg-secondary text-white font-bold text-lg rounded-lg shadow-lg hover:bg-secondary-dark transition-colors'
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)',
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {product?.downloadMessage}
+                  </motion.a>
+                )}
               </div>
             </div>
           ))}
         </div>
-
-        {/* Botón de descarga global */}
-
-        <DownloadPDF dict={dict} />
       </div>
     </section>
   );

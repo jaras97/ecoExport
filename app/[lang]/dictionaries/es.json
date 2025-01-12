@@ -22,14 +22,15 @@
   },
  "products": {
   "title": "Nuestros Productos",
-  "downloadMessage": "Descargar PDF Detallado del Producto",
-  "pdfNote": "Obtén información detallada sobre nuestros productos.",
+
   "pdf": "/pdf/chatarraSpa.pdf",
   "items": [
     {
       "title": "Chatarra HSM1 y HSM2",
       "description": "Acero pesado y limpio para tus procesos industriales.",
-      "image": "/chatarra.png"
+      "image": "/chatarra.png",
+      "pdf": "/pdf/chatarraSpa.pdf",
+      "downloadMessage": "Descargar PDF Detallado del Producto"
     },
     {
       "title": "Maderas de Alta Calidad",
@@ -39,7 +40,9 @@
     {
       "title": "Frutas Deshidratadas",
       "description": "Sabor natural, saludable y listo para exportación.",
-      "image": "/frutos.png"
+      "image": "/frutos.png",
+      "pdf": "/pdf/fruitsEsp.pdf",
+      "downloadMessage": "Descargar PDF Detallado del Producto"
     }
   ]
 },

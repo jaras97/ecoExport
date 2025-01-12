@@ -22,14 +22,14 @@
 },
  "products": {
   "title": "Our Products",
-  "downloadMessage": "Download Product Details PDF",
-  "pdfNote": "Get detailed information about our products.",
-  "pdf": "/pdf/ChatarraEn.pdf",
+
   "items": [
     {
       "title": "HSM1 and HSM2 Scrap",
       "description": "Heavy and clean steel for your industrial processes.",
-       "image": "/chatarra.png"
+       "image": "/chatarra.png",
+       "downloadMessage": "Download Product Details PDF",
+       "pdf": "/pdf/ChatarraEn.pdf"
     },
     {
       "title": "High-Quality Wood",
@@ -39,7 +39,9 @@
     {
       "title": "Dried Fruits",
       "description": "Natural, healthy flavors ready for export.",
-        "image": "/frutos.png"
+        "image": "/frutos.png",
+        "downloadMessage": "Download Product Details PDF",
+        "pdf": "/pdf/fruitsEn.pdf"
     }
   ]
 },

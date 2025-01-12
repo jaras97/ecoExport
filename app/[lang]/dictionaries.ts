@@ -24,13 +24,12 @@ export type Dictionary = {
   };
   products: {
     title: string;
-    downloadMessage: string,
-  pdfNote: string,
-    pdf: string,
+
     items: {
       title: string;
       description: string;
       image: string;
+      downloadMessage?: string,
       pdf?: string,
     }[];
   };
