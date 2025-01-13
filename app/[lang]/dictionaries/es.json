@@ -35,7 +35,9 @@
     {
       "title": "Maderas de Alta Calidad",
       "description": "Resistentes y versátiles para cualquier aplicación.",
-      "image": "/madera.jpg"
+      "image": "/madera.jpg",
+       "pdf": "/pdf/woodEsp.pdf",
+      "downloadMessage": "Descargar PDF Detallado del Producto"
     },
     {
       "title": "Frutas Deshidratadas",

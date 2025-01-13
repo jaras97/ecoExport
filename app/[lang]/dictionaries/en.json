@@ -34,7 +34,9 @@
     {
       "title": "High-Quality Wood",
       "description": "Durable and versatile for any application.",
-     "image": "/madera.jpg"
+     "image": "/madera.jpg",
+      "downloadMessage": "Download Product Details PDF",
+       "pdf": "/pdf/woodEn.pdf"
     },
     {
       "title": "Dried Fruits",
