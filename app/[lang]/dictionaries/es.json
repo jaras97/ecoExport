@@ -45,6 +45,13 @@
       "image": "/frutos.png",
       "pdf": "/pdf/fruitsEsp.pdf",
       "downloadMessage": "Descargar PDF Detallado del Producto"
+    },
+    {
+      "title": "Carbón Vegetal de Alta Calidad",
+      "description": "Alta pureza, bajo contenido de humedad y excelente poder calorífico. ",
+      "image": "/carbon.png",
+      "pdf": "/pdf/charcoalEsp.pdf",
+      "downloadMessage": "Descargar PDF Detallado del Producto"
     }
   ]
 },

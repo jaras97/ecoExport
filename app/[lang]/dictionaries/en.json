@@ -44,6 +44,13 @@
         "image": "/frutos.png",
         "downloadMessage": "Download Product Details PDF",
         "pdf": "/pdf/fruitsEn.pdf"
+    },
+    {
+      "title": "High-Quality Charcoal",
+      "description": "High purity, low moisture content, and excellent calorific value",
+      "image": "/carbon.png",
+      "pdf": "/pdf/charcoalEn.pdf",
+      "downloadMessage": "Download Product Details PDF"
     }
   ]
 },
